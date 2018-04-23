@@ -1,0 +1,26 @@
+#actions {
+	position:fixed;
+	top: 73px;
+	left: 30px;
+	z-index: 99999;
+	a {
+		background: rgba(0,0,0,0.8);
+		padding: 7px;
+		margin: 2px;
+		color: #ccc;
+		display: inline-block;
+		&:hover{
+			color: #fff;
+			background: #81A140;
+		}
+	}
+}	
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.fp-controlArrow.fp-prev {
+	left: 50px;
+}
+.fp-controlArrow.fp-next{
+	right: 50px;
+}
