@@ -1,87 +1,158 @@
-
-.intro p{
-	color: #fff;
+@font-face {
+  font-family: 'GothamRounded';
+  font-weight: bold;
+  src: URL('../fonts/GothamRounded-Bold.otf') format('opentype');
 }
-
-h1{
-	font-size: 5em;
-	font-family: arial,helvetica;
-	color: #fff;
-	margin:0;
-	padding:0;
+* {
+	font-family: "GothamRounded";
 }
-
-/* Centered texts in each section
-* --------------------------------------- */
-.section{
+.section {
 	text-align:center;
+	position: relative;
 }
 
-
-/* Backgrounds will cover all the section
-* --------------------------------------- */
-#section0,
-#section1,
-#section2,
-#section3{
+#section0, #section1, #section2, #section3 {
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
 
 }
 
-/* Defining each sectino background and styles
-* --------------------------------------- */
-#section0{
+#section0 {
 	background-image: url(../images/bg.jpg);
+	color: rgb(255, 255, 255);
+	nav {
+		ul {
+			display: inline-flex;
+		}
+		ul, img {
+			padding: 35px 0px;
+		}
+		li {
+			font-size: 1.4vw;
+			font-family: "GothamRounded";
+			font-weight: bold;
+			text-transform: uppercase;
+			margin: 30px 20px;
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+
+		}
+			
+	}
+	.intro {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 40%;
+		h1 {
+			font-size: 36px;
+  			font-family: "GothamRounded";
+  			font-weight: bold;
+  			text-transform: uppercase;
+			color: inherit;
+		}
+		p {
+			font-size: 16px;
+			font-family: "GothamRounded";
+			color: inherit;
+		}
+		a {
+			display: inline-block;
+			border: 5px solid c;
+			border-radius: 3px;
+			background-color: rgb(22, 160, 133);
+			padding: 18px 35px;
+			font-size: 12px;
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 25px;
+			transition: 7ms;
+			&:hover {
+				background-color: rgb(26, 188, 156,);
+			}
+		}
+	}
+	.icon {
+		position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    i {
+	    	margin: 15px;
+	    	font-size: 21px;
+	    	background-size: 40%;
+	    	&:nth-of-type(1):hover{
+	    		color: #00aced;
+	    	}
+	    	&:nth-of-type(2):hover{
+	    		background: linear-gradient(to right, #0063dc , #ff0084);
+	    		
+	    	}
+	    	&:nth-of-type(3):hover{
+	    		background-color: #ea4c89;
+	    		border-radius: 50%;
+	    		color: #d0185f;
+	    		background-size: cover;
+	    	}
+	    }
+	}
 }
-#section0 h1{
-	top: 50%;
-	transform: translateY(-50%);
-	position: relative;
+
+#section1 {
+	background-color: #f5f6f8;
+	img {
+		position: absolute;
+    	right: 10%;
+    	bottom: 13%;
+	}
+	.secend {
+		position: absolute;
+		width: 30%;
+		text-align: left;
+		left: 10%;
+		top: 13%;
+		h1 {
+			font-size: 18px;
+			color: rgb(22, 160, 133);
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 50px;
+		}
+		p {
+			font-size: 12px;
+			color: rgb(55, 55, 55);
+	 		line-height: 2;
+	 		margin-bottom: 30px;
+		}
+		a {
+			display: inline-block;
+			border: 5px solid c;
+			border-radius: 3px;
+			background-color: rgb(22, 160, 133);
+			padding: 18px 35px;
+			font-size: 12px;
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 25px;
+			transition: 7ms;
+			&:hover {
+				background-color: rgb(26, 188, 156,);
+			}
+		}
+	}
 }
+
+
 #section2{
 	background-image: url(imgs/bg3.jpg);
-	padding: 6% 0 0 0;
 }
 #section3{
 	background-image: url(imgs/bg4.jpg);
-	padding: 6% 0 0 0;
-}
-#section3 h1{
-	color: #000;
-}
-
-
-/*Adding background for the slides
-* --------------------------------------- */
-#slide1{
-	background-image: url(imgs/bg2.jpg);
-	padding: 6% 0 0 0;
-}
-#slide2{
-	background-image: url(imgs/bg5.jpg);
-	padding: 6% 0 0 0;
-}
-
-nav {
-	ul {
-		display: inline-flex;
-	}
-	ul, img {
-		padding: 35px 0px;
-	}
-	li {
-		font-size: 1.3vw;
-		font-family: "GothamRounded";
-		color: rgb(255, 255, 255);
-		font-weight: bold;
-		text-transform: uppercase;
-		margin: 30px 20px;
-	}
-	h1 {
-
-	}
 }
 
 
