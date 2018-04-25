@@ -5,7 +5,9 @@
 }
 * {
 	font-family: "GothamRounded";
+	box-sizing: border-box;
 }
+
 .section {
 	text-align:center;
 	position: relative;
@@ -107,23 +109,23 @@
 	img {
 		position: absolute;
     	right: 10%;
-    	bottom: 13%;
+    	bottom: 15%;
 	}
 	.secend {
 		position: absolute;
 		width: 30%;
 		text-align: left;
 		left: 10%;
-		top: 13%;
+		top: 15%;
 		h1 {
-			font-size: 18px;
+			font-size: 2vw;
 			color: rgb(22, 160, 133);
 			font-weight: bold;
 			text-transform: uppercase;
 			margin-bottom: 50px;
 		}
 		p {
-			font-size: 12px;
+			font-size: 1.2vw;
 			color: rgb(55, 55, 55);
 	 		line-height: 2;
 	 		margin-bottom: 30px;
@@ -133,7 +135,7 @@
 			border: 5px solid c;
 			border-radius: 3px;
 			background-color: rgb(22, 160, 133);
-			padding: 18px 35px;
+			padding: 25px 50px;
 			font-size: 12px;
 			color: rgb(255, 255, 255);
 			font-weight: bold;
@@ -148,11 +150,88 @@
 }
 
 
-#section2{
-	background-image: url(imgs/bg3.jpg);
+#section2 {
+	background-color: #fff;
+	img {
+		position: absolute;
+		bottom: 0;
+		left: 10%
+	}
+	#textSlider {
+
+		width: 400px;
+		display: inline-flex;
+		float: left;
+		overflow: hidden;
+		position: absolute;
+	}
+	#control {
+		position: absolute;
+    	bottom: -20px;
+    	h2 {
+    		text-align: left;
+    	}	
+	}
+	
+	ul {
+		display: inline-flex;
+		margin-top: 20%;
+		text-align: left;
+		width: 2000px;
+		li {
+			width: 400px;
+			height: 400px;
+			h1 {
+				font-size: 18px;
+				color: rgb(22, 160, 133);
+				font-weight: bold;
+				text-transform: uppercase;	
+				margin-bottom: 40px;
+			}
+			p {
+				font-size: 12px;
+				color: rgb(55, 55, 55);
+				line-height: 1.833;
+				font-weight: lighter;
+				margin-bottom: 40px;
+			}
+			a {
+				display: inline-block;
+				background-color: rgb(22, 160, 133);
+				width: 192px;
+				height: 51px;
+				font-size: 12px;
+				font-weight: bold;
+  				text-transform: uppercase;
+  				color: rgb(255, 255, 255);
+  				line-height: 4;
+  				text-align: center;
+  				margin-bottom: 40px;
+  				&:hover {
+					background-color: rgb(26, 188, 156,);
+				}
+
+			}
+		}
+	}
+	i {
+		float: left;
+		font-size: 30px;
+		padding-right: 20px;
+		color: #000;
+		cursor: pointer;
+		margin-bottom: 40px;
+	}
 }
-#section3{
+
+
+
+#section3 {
 	background-image: url(imgs/bg4.jpg);
 }
-
-
+#section4 {
+	background-image: url(../images/five.jpg);
+}
+#section5 {
+	background-image: url(images/five.jpg);
+}
