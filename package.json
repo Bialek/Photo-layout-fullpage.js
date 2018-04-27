@@ -10,7 +10,6 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* && npm run test",
-    "build:clean": "node_modules/.bin/rimraf css/* !css/style.prefixed.css",
     "build:sass": "node-sass --output-style compressed --source-map true -o css sass",
     "build:sautoprefixer": "autoprefixer-cli css/style.css",
     "watch:sassprefixer": "onchange sass/style.scss -- npm-run-all -p build:s*",
