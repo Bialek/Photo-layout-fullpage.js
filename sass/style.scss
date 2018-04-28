@@ -12,6 +12,7 @@
 * {
 	font-family: "GothamRounded";
 	box-sizing: border-box;
+	transition: 5ms;
 }
 
 .section {
@@ -45,6 +46,12 @@
 			a {
 				text-decoration: none;
 				color: inherit;
+				
+				&:hover {
+					color: rgb(22, 160, 133);
+
+				}
+
 			}
 
 		}
@@ -261,6 +268,7 @@
 			color: #000;
 			font-size: 20px;
 			margin-left: 15px;
+			cursor: pointer;
 
 		}
 	}
@@ -320,6 +328,10 @@
 			height: 60px;
 			border: none;
 			border-radius: 0px 3px 3px 0px;
+			cursor: pointer;
+			&:hover {
+				background-color: rgb(26, 188, 156,);
+			}
 			i {
 				color: rgb(255, 255, 255);
 				font-size: 20px;
@@ -362,6 +374,7 @@
 			border-radius: 3px;
 			margin-right: 25px; 
 			transition: 1s;
+			cursor: pointer;
 			h2 {
 				font-size: 16px;
 				color: rgb(255, 255, 255);
@@ -404,6 +417,10 @@
 						color: rgb(55, 55, 55);
 						font-weight: bold;
   						text-transform: uppercase;
+  						transition: 5ms;
+  						&:hover {
+  							color: rgb(22, 160, 133);
+  						}
   						&:after {
   							margin: 10px;
 							padding: 1px;
