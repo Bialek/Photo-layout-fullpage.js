@@ -1,1 +1,1 @@
-# Photo-layout-fullpage.js
+https://bialek.github.io/Photo-layout-fullpage.js/
