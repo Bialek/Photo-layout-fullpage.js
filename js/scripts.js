@@ -30,7 +30,7 @@ $(function(){
 		
 
 
-	$('#section2 #right').click(function(){
+	$('#section2 #right1').click(function(){
 		list.animate({"marginLeft":-400}, 500, function(){
 			var firstItem = list.find('li:first'),
 				lastItem = list.find('li:last');
@@ -41,7 +41,7 @@ $(function(){
 		slideNumber();
 	});
 
-	$('#section2 #left').click(function(){
+	$('#section2 #left1').click(function(){
 		list.animate({"marginLeft":400}, 500, function(){
 			for (var i = 0; i < (sliderCount-1); i++){
 
@@ -67,3 +67,31 @@ $(function(){
 	}
 	
 });
+
+$(function(){
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = $(".gallery");
+		if (n > x.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+		}
+		x[slideIndex-1].style.display = "block";  
+	}
+
+	$('#section3 #left2').click(function(){
+		plusDivs(-1);
+	})
+
+	$('#section3 #right2').click(function(){
+		plusDivs(1);
+	})
+})
