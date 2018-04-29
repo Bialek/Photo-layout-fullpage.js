@@ -14,7 +14,19 @@
 	box-sizing: border-box;
 	transition: 5ms;
 }
-
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a {
+	text-decoration:none;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
 .section {
 	text-align:center;
 	position: relative;
@@ -44,9 +56,7 @@
 			text-transform: uppercase;
 			margin: 30px 20px;
 			a {
-				text-decoration: none;
 				color: inherit;
-				
 				&:hover {
 					color: rgb(22, 160, 133);
 
@@ -64,14 +74,15 @@
 		top: 40%;
 		h1 {
 			font-size: 36px;
-  			font-family: "GothamRounded";
   			font-weight: bold;
   			text-transform: uppercase;
-			color: inherit;
+  			@media (max-width: 768px) {
+  				font-size: 5vh;
+
+  			}
 		}
 		p {
-			font-size: 16px;
-			font-family: "GothamRounded";
+			font-size: 2.5vh;
 			color: inherit;
 		}
 		a {
@@ -98,13 +109,19 @@
 	    bottom: 0;
 	    i {
 	    	margin: 15px;
-	    	font-size: 21px;
+	    	font-size: 4vh;
 	    	background-size: 40%;
 	    	&:nth-of-type(1):hover{
 	    		color: #00aced;
 	    	}
 	    	&:nth-of-type(2):hover{
 	    		background: linear-gradient(to right, #0063dc , #ff0084);
+	    		background-size: cover;
+	    		background-position: center;
+	    		border: none;
+	    		border-radius: 50%;
+
+
 	    		
 	    	}
 	    	&:nth-of-type(3):hover{
@@ -122,7 +139,7 @@
 	img {
 		position: absolute;
     	right: 10%;
-    	bottom: 15%;
+    	bottom: 0;
 	}
 	.secend {
 		position: absolute;
@@ -243,10 +260,13 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 7%;
+		top: 2vh;
 		display: block;
+		img {
+			width: 8vh;
+		}
 		h1 {
-			font-size: 16px;
+			font-size: 3vh;
 			font-weight: bold;
 			text-transform: uppercase;
 			line-height: 1.25;
@@ -254,7 +274,7 @@
 		}
 		p {
 			width: 60%;
-			font-size: 10px;
+			font-size: 2vh;
 			color: rgb(55, 55, 55);
   			line-height: 1.2;
   			margin: 0 auto;
@@ -263,11 +283,11 @@
 	.arrows {
 		position: absolute;
 		right: 12%;
-		top: 32%;
+		top: 25%;
 		i {
 			color: #000;
-			font-size: 20px;
-			margin-left: 15px;
+			font-size: 4vh;
+			margin-left: 2vh;
 			cursor: pointer;
 
 		}
@@ -275,12 +295,14 @@
 	.gallery {
 		position: absolute;
 		right: 10%;
-		top: 35%;
+		top: 30%;
 		width: 80%;
 		img {
-			width: 47%;
+			width: 50vh;
 			margin: 10px;
+			height: 30vh;
 		}
+
 
 	}
 
@@ -310,6 +332,7 @@
 			background-color: rgb(255, 255, 255);
 			width: 280px;
 			height: 60px;
+			padding-left: 20px;
 			border: none;
 			border-radius: 3px 0px 0px 3px;
 			&::placeholder {
@@ -380,7 +403,8 @@
 				color: rgb(255, 255, 255);
 				font-weight: bold;
   				text-transform: uppercase;
-  				line-height: 1.2;
+  				line-height: 56px;
+  				margin-left: 20px
 			}
 			i {
 				margin-left: auto;
@@ -393,6 +417,7 @@
 				border: none;
 				border-radius: 0px 3px 3px 0px;
 				margin-top: -1px;
+				line-height: 56px;
 			}
 			&:hover {
 				background-color: rgb(22, 160, 133);
@@ -428,6 +453,9 @@
 							height: 14px;
 							background-color: #16a085;
   						}
+					}
+					&:last-child a::after {
+						display: none;
 					}
 				}
 			}
