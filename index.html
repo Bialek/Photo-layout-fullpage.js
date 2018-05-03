@@ -3,12 +3,12 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>Photo layout</title>
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/examples.css" /> -->
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -17,28 +17,48 @@
 
 <div id="fullpage">
 
+	
+
 	<div class="section " id="section0">
-		<nav>
-			<div class="ui grid">
-				<div class="row">
-					<div class="six wide right floated column">
-						<ul>
-							<li><a href="#firstPage">Home Page</a></li>
-							<li><a href="#secondPage">photo app</a></li>
-							<li><a href="#3rdPage">design</a></li>
-						</ul>
-					</div>
-					<div class="two wide column">
-						<img src="images/logo.png" id='logo' alt="logo">
-					</div>
-					<div class="six wide left floated column">
-						<ul>
-							<li><a href="#4thPage">community</a></li>
-							<li><a href="#5thPage">subscribe</a></li>
-							<li><a href="#6thPage">download</a></li>
-						</ul>
-					</div>
-				</div>	
+
+		<nav id="mobileMenu" role="navigation">
+			<div id="menuToggle">
+				<input type="checkbox" />
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<li><a href="#firstPage">Home Page</a></li>
+					<li><a href="#secondPage">photo app</a></li>
+					<li><a href="#3rdPage">design</a></li>
+					<li><a href="#4thPage">community</a></li>
+					<li><a href="#5thPage">subscribe</a></li>
+					<li><a href="#6thPage">download</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div >
+				<img src="images/logo.png" id='logo' alt="logo">
+		</div>
+
+		<nav id="desktopMenu">
+			<div>
+				<ul>
+					<li><a href="#firstPage">Home Page</a></li>
+					<li><a href="#secondPage">photo app</a></li>
+					<li><a href="#3rdPage">design</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul class="right">
+					<li><a href="#4thPage">community</a></li>
+					<li><a href="#5thPage">subscribe</a></li>
+					<li><a href="#6thPage">download</a></li>
+				</ul>
 			</div>
 		</nav>
 
@@ -168,15 +188,13 @@
 			<h1>subscribe to us community</h1>
 			<div class="form-input">
 				<form action="#.php">
-				<input type="email" name="email" placeholder="your email">
-				<button type="submit"><i class="fas fa-check"></i></button>
-			</form>
-				
+					<input type="email" name="email" placeholder="your email">
+					<button type="submit"><i class="fas fa-check"></i></button>
+				</form>	
 			</div>
-			
-
 		</div>
 	</div>
+	
 	<div class="section" id="section5">
 		<div class="download">
 			<h1>Download it</h1>

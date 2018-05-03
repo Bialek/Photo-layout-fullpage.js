@@ -4,7 +4,7 @@ $(document).ready(function() {
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: ['Home', 'Photo App', 'Design', 'Community', 'Subscibe', 'Download'],
-		responsiveWidth: 768,
+		responsiveWidth: 769,
 		afterResponsive: function(isResponsive){
 			
 		}
